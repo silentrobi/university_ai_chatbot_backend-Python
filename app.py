@@ -32,9 +32,6 @@ def replaceChar(str):
 app= Flask(__name__)
 
 
-
-
-
 @app.route('/webhook', methods= ['GET', 'POST'])
 def webhook():
 
@@ -67,5 +64,5 @@ def webhook():
 
 
 if __name__ == '__main__':
-    port = int(os.getenv('PORT', 5000))
-    app.run(debug= True, port= port , host= '127.0.0.1')
+    port = int(os.getenv('PORT', 4000))
+    app.run(port= port , host= '127.0.0.1')
