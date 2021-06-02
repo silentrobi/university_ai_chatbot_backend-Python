@@ -1,0 +1,6 @@
+Flask==1.1.2
+google
+uuid
+pyrebase
+beautifulsoup4
+requests
