@@ -58,11 +58,6 @@ def webhook():
         return make_response(jsonify({'fulfillmentText': text.getTextData()+ "\n" + text.getUrl()}))  
 
 
-
-
-
-
-
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 4000))
     app.run(port= port , host= '127.0.0.1')
