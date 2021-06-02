@@ -57,6 +57,9 @@ def webhook():
         appController.sendDataToDatabase(ID, text)
         return make_response(jsonify({'fulfillmentText': text.getTextData()+ "\n" + text.getUrl()}))  
 
+@app.route('/hello', methods=['GET'])
+def hello():
+    return "Hello from weebhook"
 
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 4000))
